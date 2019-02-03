@@ -6,23 +6,28 @@
 /*   By: tmampuru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/27 13:06:14 by tmampuru          #+#    #+#             */
-/*   Updated: 2019/01/27 14:02:47 by tmampuru         ###   ########.fr       */
+/*   Updated: 2019/02/03 14:16:25 by tmampuru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_putnbr(int nb)
 {
-	if ( nb < 0)
+	int c;
+
+	if (nb < 0)
 	{
-		write(1,"-",1);
+		ft_putchar("-");
 		nb = -nb;
 	}
-	if ( nb >= 10)
+	if (nb >= 10)
 	{
-		int c;
-
 		c = nb / 10;
 		ft_putnbr(c);
 		c = nb % 10;
@@ -31,7 +36,7 @@ void	ft_putnbr(int nb)
 	else
 	{
 		nb = nb + 48;
-		write(1, &nb, 1);
+		ft_putchar(nb);
 	}
 }
 

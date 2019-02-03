@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   union.c                                            :+:      :+:    :+:   */
+/*   ft_union.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tmampuru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/02/02 15:15:58 by tmampuru          #+#    #+#             */
-/*   Updated: 2019/02/03 14:58:17 by tmampuru         ###   ########.fr       */
+/*   Created: 2019/02/03 10:09:00 by tmampuru          #+#    #+#             */
+/*   Updated: 2019/02/03 10:29:47 by tmampuru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int		ft_check_exist(char *s, char c, int i)
 	return (0);
 }
 
-void	ft_union(char *str, char *s2)
+void		ft_union(char *str, char *s2)
 {
 	int i;
 	int j;
@@ -53,12 +53,12 @@ void	ft_union(char *str, char *s2)
 	}
 }
 
-int	main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	if (argc == 3)
 	{
 		ft_union(argv[1], argv[2]);
 	}
-	write(1, "\n", 1);
+	write(1,"\n",1);
 	return (0);
 }

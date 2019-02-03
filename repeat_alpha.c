@@ -6,21 +6,21 @@
 /*   By: tmampuru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/01 11:49:47 by tmampuru          #+#    #+#             */
-/*   Updated: 2019/02/01 12:41:19 by tmampuru         ###   ########.fr       */
+/*   Updated: 2019/02/03 14:53:48 by tmampuru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int i;
-	int index; 
+	int index;
 
 	i = 0;
 	if (argc != 2)
 	{
-		write(1,"\n",1);
+		write(1, "\n", 1);
 	}
 	else
 	{
@@ -36,7 +36,7 @@ int main(int argc, char **argv)
 				}
 			}
 			i++;
-		}		
-	}	
+		}
+	}
 	return (0);
 }

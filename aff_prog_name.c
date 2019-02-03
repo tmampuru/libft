@@ -6,14 +6,13 @@
 /*   By: tmampuru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/28 10:09:45 by tmampuru          #+#    #+#             */
-/*   Updated: 2019/01/28 10:49:20 by tmampuru         ###   ########.fr       */
+/*   Updated: 2019/02/03 14:55:56 by tmampuru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
 	int i;
 

@@ -6,7 +6,7 @@
 /*   By: tmampuru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/25 13:42:44 by tmampuru          #+#    #+#             */
-/*   Updated: 2019/01/27 14:27:41 by tmampuru         ###   ########.fr       */
+/*   Updated: 2019/02/03 14:45:37 by tmampuru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -29,7 +29,7 @@ void	ft_putstr(char *str)
 	}
 }
 
-int main()
+int		main(void)
 {
 	ft_putstr("Hello");
 	return (0);
