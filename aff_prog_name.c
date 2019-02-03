@@ -6,7 +6,7 @@
 /*   By: tmampuru <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/01/28 10:09:45 by tmampuru          #+#    #+#             */
-/*   Updated: 2019/02/03 14:55:56 by tmampuru         ###   ########.fr       */
+/*   Updated: 2019/02/03 15:56:26 by tmampuru         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(int argc, char **argv)
 	i = 0;
 	while (argv[0][i] != '\0' && argc == 1)
 	{
-		write(1, *argv[0][i], 1);
+		write(1, &argv[0][i], 1);
 		i++;
 	}
 	return (0);
